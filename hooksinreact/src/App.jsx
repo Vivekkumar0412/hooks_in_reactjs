@@ -4,10 +4,7 @@ function App() {
   // let [counter, setCounter] = useState(0)
   // let [name, setName] = useState("")
   let [details,setDetails] = useState({counter : 0, name: ""})
-  let n = "vivek singh rajput";
   console.log(details)
-  let v = ()=>"vivek"
-  v();
   return (
     
     <>
