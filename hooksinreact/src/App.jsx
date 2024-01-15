@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
+let [details,setDetails] = useState({counter : 0, name: ""})
 function App() {
   // let [counter, setCounter] = useState(0)
   // let [name, setName] = useState("")
-  let [details,setDetails] = useState({counter : 0, name: ""})
   console.log(details)
   return (
     
