@@ -7,9 +7,17 @@ export default function App(){
   //   document.title = `${count} new message`
   // });
   function chec(){
-    document.title = `${count} new message`;
+    window.document.title = `${count} new message`;
   }
-  useEffect(chec,[]);
+  useEffect(chec);
+
+  useEffect(()=>{
+    console.log("useEffect render ", {count});
+
+    return(
+      console.log("Clean up ",{count})
+    )
+  },[count])
   // useEffect(()=>{
   //   setInterval(()=>{
   //     {setCount(count + 1)}
