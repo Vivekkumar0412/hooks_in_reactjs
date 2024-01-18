@@ -10,7 +10,7 @@ export default function App(){
     window.document.title = `${count} new message`;
   }
   useEffect(chec);
-
+ 
   useEffect(()=>{
     console.log("useEffect render ", {count});
 
