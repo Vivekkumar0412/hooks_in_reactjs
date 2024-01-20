@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-div{
+    border-radius: 20px;
+    background-color: black;
+    height: 400px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}.t{
+    color: red;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
