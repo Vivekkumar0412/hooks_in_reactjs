@@ -11,10 +11,13 @@ function App() {
   useEffect(()=>{
     count.current = count.current + 1;
   })
+
+  
+  
   return(
     <>
     <textarea name="" id="" cols="30" rows="10"></textarea>
-      <input type="text" onChange={(e)=> setName(e.target.value)} />
+      <input type="text"  onChange={(e)=> setName(e.target.value)} />
       <h1>name : {name}</h1>
       <h1>Cureent count is : {count.current}</h1>
     </>
