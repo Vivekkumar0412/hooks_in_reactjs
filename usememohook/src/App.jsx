@@ -6,7 +6,7 @@ function App() {
   const [toggle, setToggle] = useState(false);
   let divRef = useRef();
   let cal = useMemo(()=>{
-    return ExpensiveFunction(count)
+    return   ExpensiveFunction(count)
 
   },[count])
   useEffect(() => {
