@@ -4,7 +4,7 @@ export default function Table({calculationTable}){
     const [row, setRow] = useState([]);
     useEffect(()=>{
         console.log("useeffect is here")
-        setRow(calculationTable);
+        setRow(calculationTable());
     },[calculationTable])
     
     return row.map((key,index)=>{
