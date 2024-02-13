@@ -11,7 +11,7 @@ function App() {
   //  return expensiveFun(count)
   // },[count])
   // console.log(`fun value is here   ${fun}`);
-  const calculationTable = useMemo(() => {
+  const calculationTable = useCallback(() => {
     // console.log("calculation table here")
     return [count * 1, count * 2, count * 3, count * 4, count * 5];
   }, [count]);
