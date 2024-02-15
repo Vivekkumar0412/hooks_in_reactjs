@@ -38,6 +38,7 @@ export default function App(){
     console.log(user.results[0]);
     console.log(user.results[0].name);
     console.log(user.results[0].name.first);
+    console.log(user.results[0].name.first);
     console.log(typeof(user))
   
   })
