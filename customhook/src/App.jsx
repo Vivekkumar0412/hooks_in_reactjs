@@ -25,10 +25,11 @@ import './App.css'
 // }
 
 // export default App
-export default function App(){
+export default function App({ur}){
   let [user, setUser] = useState();
   useEffect(()=>{
-    fetch("https://randomuser.me/api/")
+  
+    fetch(ur)
     .then((res)=> res.json())
     .then((data)=> setUser(data))
   },[]);
@@ -46,11 +47,11 @@ export default function App(){
     
     <>
      { setTimeout(()=>{
-        let nam = user.results[0].name;
+        let nam = user.results[0].name.first;
+        <h1>{nam}</h1>
          return(nam) 
       })}
 
-      <h1>{nam}</h1>
       </>
   )
 }
